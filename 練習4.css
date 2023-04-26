@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+head{ display: none;
+}
+
+
+body{
+  color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.85rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+#mainvisual img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 80px;
+}
+
+/*真ん中の文章*/
+.RecipeDiary{
+    text-align: center;
+    margin: 0 auto 60px;
+}
+
+#main-text h1{
+    display: block;
+    font-size: 3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#main-text p{
+    font-size: large;
+}
+
+
+/*画像横並べ*/
+ul {
+    width: 100%;
+    padding: 0;
+}
+
+#recipe-visual{
+    display: flex;
+    margin-bottom: 60px;
+}
+/*
+「calc(100%/3);」で、widthの値が3等分になるよう計算する。
+※「calc」は、割り切れない数で均等に配置したい場合などに便利。
+*/
+#recipe-visual li {
+    width: calc(100%/3);
+    list-style: none;
+  }
+
+#recipe-visual li img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: bottom;
+    padding: 20px;
+}
+
+/*ボタン*/
+.btn-outline-dark{
+    display:block;
+    margin:0 auto;
+}
+
+
+/*フッター*/
+footer{
+    text-align: center;
+}
+
+#link{
+    margin-top: 40px;
+}
+#link a{
+    color: #333;
+    margin-left: 10px;
+    font-size: medium;
+    padding-bottom: 60px;
+
+}
+
+#footer {
+     font-size: small;
+     padding-top: 40px;
+}
